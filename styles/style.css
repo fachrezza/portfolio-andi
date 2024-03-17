@@ -4,7 +4,7 @@
   --primaryTextColor: #ffffff; /* Untuk title atau judul */
   --secondaryTextColor: #ffffff; /* Untuk text biasa seperti paragraph contohnya */
 
-  --borderColor: #f1f1f1;
+  --borderColor: #bd9ecb8e;
   --lineColor: #d9d9d9; /* untuk line di pre-title */
 
   --primaryBackgroundColor: #fff;
@@ -266,6 +266,11 @@ nav ul li a {
   text-align: center;
   background: var(--secondaryBackgroundColor);
   border-radius: var(--itemBorderRadius);
+  transition: 0.4s;
+}
+
+.service:hover {
+  transform: scale(1.1);
 }
 
 .service h4 {
@@ -283,11 +288,11 @@ nav ul li a {
 }
 
 .service-icon svg {
-  fill:#501258;
+  fill:#f1e9ff;
 }
 
 .service-icon {
-  background:#dcf72b77;
+  background:#4c1791;
   width: fit-content;
   margin: 0 auto;
   padding: 1rem 1.3rem;
@@ -304,6 +309,7 @@ nav ul li a {
   border-radius: var(--itemBorderRadius);
   overflow: hidden; /* supaya gambar yang diatas itu dia ngikut border radiusnya, karena yang dikasih border radius disini adalah div portfolio ini */
   border: 1px solid var(--borderColor);
+  transition: 0.4s;
 }
 
 .portfolio-cover {
@@ -314,6 +320,11 @@ nav ul li a {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  
+}
+
+.portfolio:hover{
+  transform: scale(1.1);
 }
 
 .portfolio-info {
@@ -333,11 +344,12 @@ nav ul li a {
 }
 
 .portfolio-title a svg:hover {
-  fill: var(--primaryIconColor);
+  fill: #e6f111;
 }
 
 .portfolio-title a svg {
   transition: 0.2s ease-in-out;
+  fill:#ffffff
 }
 
 .portfolio-tags {
@@ -461,7 +473,7 @@ nav ul li a {
 .btn-submit {
   width: 100%;
   padding: 0.75rem 1.3rem;
-  background-color: var(--primaryIconColor);
+  background-color: #6d65d2;
   color: #fff;
   border: none;
   border-radius: 3px;
@@ -470,7 +482,7 @@ nav ul li a {
 }
 
 .btn-submit:hover {
-  background-color: var(--primaryIconColorHover);
+  background-color: #3e389e;
 }
 
 /* Contact Section - Right Side */
@@ -502,7 +514,7 @@ nav ul li a {
 /* Footer Section */
 footer {
   padding: 4rem 0;
-  background: var(--secondaryBackgroundColor);
+
   text-align: center;
 }
 
